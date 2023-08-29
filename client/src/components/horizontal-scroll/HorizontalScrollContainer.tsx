@@ -1,5 +1,5 @@
 import { ReactElement, useEffect, useRef, useState } from "react";
-import useScrollPosition from "../hooks/useScrollPosition";
+import useScrollPosition from "../../hooks/useScrollPosition";
 
 interface props {
   children: React.ReactNode,

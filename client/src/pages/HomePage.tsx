@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import HorizontalScrollContainer from "../components/HorizontalScrollContainer";
+import HorizontalScrollContainer from "../components/horizontal-scroll/HorizontalScrollContainer";
 import LandingScrollPanel from "../components/scroll-panels/LandingScrollPanel";
 import ParallaxQuotePanel from "../components/scroll-panels/ParallaxQuotePanel";
 import Colors from "../core/ColorPalette";
