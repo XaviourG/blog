@@ -15,7 +15,10 @@ const HorizontalScrollContainer = ({
 
   useEffect(() => {
     if (scrollContainerRef.current && scrollElementRef.current) {
-      const scrollDist = scrollPosition.y - scrollContainerRef.current.clientTop;
+      let scrollDist = scrollPosition.y - scrollContainerRef.current.clientTop;
+      if (scrollDist > window.innerWidth) {
+        scrollDist = window.innerWidth;
+      }
       setHorizontalOffset(scrollDist);
     }
   }, [scrollPosition]);
@@ -33,7 +36,6 @@ const HorizontalScrollContainer = ({
       style={{
         maxWidth: '100vw',
         height: containerHeight(),
-        backgroundColor: 'blue',
         overflowX: 'clip',
         whiteSpace: 'nowrap',
       }}
@@ -46,7 +48,6 @@ const HorizontalScrollContainer = ({
           height: '100vh',
           position: 'sticky',
           top: 0,
-          backgroundColor: 'pink',
         }}
       >
         {children}

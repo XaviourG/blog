@@ -1,5 +1,5 @@
 import './App.css'
-import HorizontalScrollContainer from './components/HorizontalScrollContainer'
+import HomePage from './pages/HomePage'
 
 function App() {
 
@@ -13,13 +13,7 @@ function App() {
       justifyContent: 'center',
       width: '100%',
     }}>
-     <HorizontalScrollContainer>
-        <div style={{width: '300vw', height: '100vh', display: 'flex'}}>
-          <div style={{width: '75vw', height: '100vh', backgroundColor: 'green'}}></div>
-          <div style={{width: '100vw', height: '100vh', backgroundColor: 'red'}}></div>
-          <div style={{width: '125vw', height: '100vh', backgroundColor: 'purple'}}></div>
-        </div>
-     </HorizontalScrollContainer>
+     <HomePage/>
     </div>
   )
 }
