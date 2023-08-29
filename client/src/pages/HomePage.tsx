@@ -3,6 +3,7 @@ import HorizontalScrollContainer from "../components/HorizontalScrollContainer";
 import LandingScrollPanel from "../components/scroll-panels/LandingScrollPanel";
 import ParallaxQuotePanel from "../components/scroll-panels/ParallaxQuotePanel";
 import Colors from "../core/ColorPalette";
+import ContentLibraryPanel from "../components/scroll-panels/ContentLibraryPanel";
 
 const HomePage = (): ReactElement => {
 
@@ -16,6 +17,7 @@ const HomePage = (): ReactElement => {
       }}>
         <LandingScrollPanel/>
         <ParallaxQuotePanel/>
+        <ContentLibraryPanel/>
       </div>
     </HorizontalScrollContainer>
   );
