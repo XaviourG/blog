@@ -15,10 +15,10 @@ const HorizontalScrollContainer = ({
 
   useEffect(() => {
     if (scrollContainerRef.current && scrollElementRef.current) {
-      let scrollDist = scrollPosition.y - scrollContainerRef.current.clientTop;
-      if (scrollDist > window.innerWidth) {
-        scrollDist = window.innerWidth;
-      }
+      const scrollDist = scrollPosition.y - scrollContainerRef.current.clientTop;
+      // if (scrollDist > window.innerWidth) {
+      //   scrollDist = window.innerWidth;
+      // }
       setHorizontalOffset(scrollDist);
     }
   }, [scrollPosition]);
