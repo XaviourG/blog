@@ -5,14 +5,20 @@ function App() {
 
   return (
     <div style={{
+      margin: 0,
+      padding: 0,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
       width: '100%',
     }}>
-     <HorizontalScrollContainer panels={4}>
-        <p>hello its me</p>
+     <HorizontalScrollContainer>
+        <div style={{width: '300vw', height: '100vh', display: 'flex'}}>
+          <div style={{width: '75vw', height: '100vh', backgroundColor: 'green'}}></div>
+          <div style={{width: '100vw', height: '100vh', backgroundColor: 'red'}}></div>
+          <div style={{width: '125vw', height: '100vh', backgroundColor: 'purple'}}></div>
+        </div>
      </HorizontalScrollContainer>
     </div>
   )
