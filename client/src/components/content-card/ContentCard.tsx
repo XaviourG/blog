@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import ArticlePreview from "../../DTOs/models/ArticlePreview";
-import Colors from "../../core/ColorPalette";
+import './ContentCard.css';
 
 interface props {
   content: ArticlePreview,
@@ -11,16 +11,9 @@ const ContentCard = ({
 }: props): ReactElement => {
 
   return (
-    <div style={{
-      width: '10rem',
-      height: '10rem',
-      backgroundColor: Colors.TEXT,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}>
-      {content.title}
-    </div>
+      <div className="ContentCard">
+        {content.title}
+      </div>
   );
 };
 

@@ -38,15 +38,16 @@ const LandingScrollPanel = (): ReactElement => {
       </div>
 
       <div style={{
-        display: 'flex',
-        flexDirection: 'column',
         width: '50%',
+        height: '100%',
       }}>
         <ScrollingCardList
           cards={[
             {title: 'fake content', publishDate: new Date()},
             {title: 'faker content', publishDate: new Date()},
             {title: 'fakest content', publishDate: new Date()},
+            {title: 'fakee content', publishDate: new Date()},
+            {title: 'feak content', publishDate: new Date()},
           ]}
         />
       </div>
